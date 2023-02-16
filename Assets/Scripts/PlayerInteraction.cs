@@ -42,13 +42,13 @@ public class PlayerInteraction : MonoBehaviour
         {
             // Changer la couleur du réticule pour indiquer que la cible peut être utilisée
             _crosshairImage.color = Color.blue;
-            Debug.Log("Target found!");
+            //Debug.Log("Target found!");
         }
         else
         {
             // Réinitialiser la couleur du réticule
             _crosshairImage.color = Color.white;
-            Debug.Log("No target found.");
+            //Debug.Log("No target found.");
         }
     }
 }

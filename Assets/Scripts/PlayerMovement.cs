@@ -85,7 +85,7 @@ public class PlayerMovement : MonoBehaviour
         // Calcule la valeur de pitch en fonction de la vitesse normale
         float pitch = velocity.magnitude / _normalSpeed;
 
-        // Applique la valeur de pitch à l'AudioSource du joueur (à remplacer par votre propre code pour récupérer la référence à l'AudioSource)
+        // Applique la valeur de pitch à l'AudioSource du joueur 
         GetComponent<AudioSource>().pitch = pitch;
     }
 }
