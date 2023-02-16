@@ -2,24 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PLayerMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     public CharacterController controller;
 
     public float speed = 12f;
     public float gravity = -9.81f;
 
-    public Transform groundCheck;
-    public float groundDistance = 0.4f;
-    public LayerMask groundMask;
+    public Transform groundCheck; //fait référence au gameObjet "groundCheck"
+    public float groundDistance = 0.4f; // le radius de la sphère qui permet de vérifier si on touche le sol
+    public LayerMask groundMask; // pour controler ce que la sphère touche
 
     //jump
     public float jumpHeight = 3f;
 
     Vector3 velocity;
-    bool isGrounded;
+    bool isGrounded; // vérifie si on à toucher le sol ou non
 
-    // Update is called once per frame
     void Update()
     {
         //gere la gravité
