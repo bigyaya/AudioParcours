@@ -158,7 +158,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -343.1, y: -75.2}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &12163887
@@ -302,8 +302,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 247733308}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.95721674, y: 0.84, z: 13.125091}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.95721674, y: 1.73, z: 13.125091}
+  m_LocalScale: {x: 2.2905, y: 2.2905, z: 2.2905}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -442,6 +442,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseSensitivity: 100
   playerBody: {fileID: 2045798870}
+  horizontalAxis: Horizontal
+  verticalAxis: Vertical
+  joystickSensitivity: 100
 --- !u!1 &397849753
 GameObject:
   m_ObjectHideFlags: 0
@@ -1025,13 +1028,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 2045798869}
   speed: 12
-  gravity: -9.81
+  gravity: -20
   groundCheck: {fileID: 2127040831}
   groundDistance: 0.4
   groundMask:
     serializedVersion: 2
     m_Bits: 64
-  jumpHeight: 3
+  jumpHeight: 4
 --- !u!114 &2045798872
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1045,6 +1048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _maxDistance: 5
+  _crosshairImage: {fileID: 12163887}
 --- !u!1 &2127040830
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,8 +1,10 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerInteraction : MonoBehaviour
 {
     [SerializeField] private float _maxDistance = 5f;
+    [SerializeField] private Image _crosshairImage;
     private IUsable _target;
 
     private void Update()
@@ -39,11 +41,13 @@ public class PlayerInteraction : MonoBehaviour
         if (_target != null)
         {
             // Changer la couleur du réticule pour indiquer que la cible peut être utilisée
+            _crosshairImage.color = Color.blue;
             Debug.Log("Target found!");
         }
         else
         {
             // Réinitialiser la couleur du réticule
+            _crosshairImage.color = Color.white;
             Debug.Log("No target found.");
         }
     }
