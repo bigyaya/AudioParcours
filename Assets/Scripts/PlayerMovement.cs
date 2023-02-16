@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
 
         //recupère les inputs
         float x = Input.GetAxis("Horizontal");
-        float y = Input.GetAxis("Vertical");
+       // float y = Input.GetAxis("Vertical");
         float z = Input.GetAxis("Vertical");
 
         //mouvements
