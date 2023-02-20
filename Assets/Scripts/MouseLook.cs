@@ -29,15 +29,19 @@ public class MouseLook : MonoBehaviour
 
         // Gestion des mouvements du joystick
         float joystickX = Input.GetAxis("RightHorizontal") * joystickSensitivity * Time.deltaTime;
+        //float joystickXF = Input.GetAxis("ForwardHorizontal") * joystickSensitivity * Time.deltaTime;
         float joystickY = Input.GetAxis("RightVertical") * joystickSensitivity * Time.deltaTime;
+        //float joystickYR = Input.GetAxis("RightVertical") * joystickSensitivity * Time.deltaTime;
 
         //limite la rotation sur l'axe Y
         xRotation -= mouseY;//à chaque frame on baisse xRotation à partir de mouseY
-        xRotation -= joystickY;
+        xRotation -= joystickX;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f)
 ;
         //rotation du joueur
+        //transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
         transform.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
         playerBody.Rotate(Vector3.up * mouseX);
+        playerBody.Rotate(Vector3.up * joystickY);
     }
 }

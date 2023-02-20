@@ -47,11 +47,15 @@ public class PlayerMovement : MonoBehaviour
         }
 
         // Récupère les inputs de déplacement horizontal et vertical
-        float x = Input.GetAxis("Horizontal");
-        float z = Input.GetAxis("Vertical");
+        //float x = Input.GetAxis("Horizontal");
+        float x = Input.GetAxis("LeftHorizontal");
+        //float z = Input.GetAxis("Vertical");
+        float z = Input.GetAxis("LeftVertical");
 
         // Calcule le vecteur de mouvement en fonction des inputs récupérés
         Vector3 move = transform.right * x + transform.forward * z;
+
+
 
 
         // Vérifie si le joueur appuie sur le bouton de sprint
