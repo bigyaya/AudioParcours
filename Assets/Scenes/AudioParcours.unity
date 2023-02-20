@@ -1187,7 +1187,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &982261936
 Transform:
   m_ObjectHideFlags: 0
@@ -1503,8 +1503,8 @@ AudioReverbZone:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1228273363}
   m_Enabled: 1
-  m_MinDistance: 17.794012
-  m_MaxDistance: 30.795355
+  m_MinDistance: 35.42835
+  m_MaxDistance: 45.940838
   m_ReverbPreset: 1
   m_Room: -1000
   m_RoomHF: -100
@@ -2389,7 +2389,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2013013037}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 5165818372160965673, guid: d672a3c2dd774e5469b64cececdcdb01,
     type: 2}
@@ -2585,7 +2585,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2045798868}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -8149609393630398554, guid: d672a3c2dd774e5469b64cececdcdb01,
     type: 2}
